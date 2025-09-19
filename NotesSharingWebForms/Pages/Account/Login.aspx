@@ -17,7 +17,11 @@
         <br /><br />
         <asp:Button ID="btnLogin" runat="server" Text="Login" CssClass="btn btn-primary" OnClick="btnLogin_Click" />
         <a class="btn" href="Register.aspx">Register</a>
+        <p>
+    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Pages/Account/Forgot_password.aspx">Forgot Password?</asp:HyperLink>
+</p>
     </div>
+    
 </form>
 </body>
 </html>

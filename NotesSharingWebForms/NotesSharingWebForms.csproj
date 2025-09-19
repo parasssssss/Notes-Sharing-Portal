@@ -120,10 +120,12 @@
   <ItemGroup>
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Pages\Account\Forgot_password.aspx" />
     <Content Include="Pages\Account\Login.aspx" />
     <Content Include="Pages\Account\Logout.aspx" />
     <Content Include="Pages\Account\Profile.aspx" />
     <Content Include="Pages\Account\Register.aspx" />
+    <Content Include="Pages\Account\Update_Password.aspx" />
     <Content Include="Pages\Notes\All.aspx" />
     <Content Include="Pages\Notes\Create.aspx" />
     <Content Include="Pages\Notes\Delete.aspx" />
@@ -134,6 +136,20 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pages\Account\Forgot_password.aspx.cs">
+      <DependentUpon>Forgot_password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Account\Forgot_password.aspx.designer.cs">
+      <DependentUpon>Forgot_password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Account\Update_password.aspx.cs">
+      <DependentUpon>Update_Password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Account\Update_Password.aspx.designer.cs">
+      <DependentUpon>Update_Password.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
