@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="NotesSharingWebForms.Site" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title>Notes Sharing</title>
+    <link href="~/Styles/site.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="navbar">
+            <ul class="nav">
+                <li><a runat="server" CssClass="nav-link" ID="LoginLink" href="~/Pages/Account/Login.aspx">Login</a></li>
+                <li><a runat="server" CssClass="nav-link" ID="RegisterLink" href="~/Pages/Account/Register.aspx">Register</a></li>
+                <li><a runat="server" CssClass="nav-link" ID="AllNotesLink" href="~/Pages/Notes/All.aspx">All Notes</a></li>
+                <li><a runat="server" CssClass="nav-link" ID="DashboardLink" href="~/Pages/Notes/Index.aspx">Dashboard</a></li>
+                <li><a runat="server" CssClass="nav-link" ID="UploadLink" href="~/Pages/Notes/Create.aspx">Upload Notes</a></li>
+                <li><a runat="server" CssClass="nav-link" ID="ProfileLink" href="~/Pages/Account/Profile.aspx">Profile</a></li>
+                
+            </ul>
+
+            <span class="nav-welcome">
+    <asp:Literal ID="litWelcome" runat="server" />
+</span>
+        </div>
+
+        <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+    </form>
+</body>
+</html>
