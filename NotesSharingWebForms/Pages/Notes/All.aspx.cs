@@ -15,7 +15,7 @@ namespace NotesSharingWebForms.Pages.Notes
 
         void LoadAll()
         {
-            string sql = @"SELECT n.id, n.title, n.file_path, n.upload_time, n.visibility, u.name AS uploader
+            string sql = @"SELECT n.id,n.title, n.file_path, n.upload_time, n.visibility, u.name AS uploader
 FROM notes n 
 INNER JOIN users u ON n.uploaded_by = u.id
 WHERE n.visibility = 'Public'

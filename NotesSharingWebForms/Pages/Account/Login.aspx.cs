@@ -75,5 +75,10 @@ namespace NotesSharingWebForms.Pages.Account
                 return sb.ToString();
             }
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Pages/Account/Register.aspx");
+        }
     }
 }

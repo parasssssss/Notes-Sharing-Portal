@@ -20,6 +20,6 @@
 
 
         <asp:Button ID="btnUpload" runat="server" Text="Upload" CssClass="btn btn-primary" OnClick="btnUpload_Click" />
-        <a class="btn" href="Index.aspx">Back</a>
+        <asp:Button ID="Button1" runat="server" Text="Back" CssClass="btn btn-primary" OnClick="Button1_Click"  />
     </div>
 </asp:Content>

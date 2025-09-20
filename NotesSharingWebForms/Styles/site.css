@@ -361,6 +361,40 @@ input.btn-danger {
         background: linear-gradient(135deg, #dc2626, #991b1b);
         transform: translateY(-2px);
     }
+/* ASP.NET Button Styling */
+input.btn {
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+    transition: all 0.2s ease;
+}
+
+    /* Primary button */
+    input.btn.btn-primary {
+        background: linear-gradient(135deg, #2563eb, #1e40af);
+        color: #fff;
+    }
+
+        input.btn.btn-primary:hover {
+            background: linear-gradient(135deg, #1d4ed8, #1e3a8a);
+            transform: translateY(-2px);
+        }
+
+    /* Danger button */
+    input.btn.btn-danger {
+        background: linear-gradient(135deg, #ef4444, #b91c1c);
+        color: #fff;
+    }
+
+        input.btn.btn-danger:hover {
+            background: linear-gradient(135deg, #dc2626, #991b1b);
+            transform: translateY(-2px);
+        }
 
 
 

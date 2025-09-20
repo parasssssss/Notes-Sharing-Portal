@@ -18,7 +18,7 @@
         <asp:TextBox ID="txtPassword" runat="server" CssClass="input" TextMode="Password" />
         <br /><br />
         <asp:Button ID="btnRegister" runat="server" Text="Create Account" CssClass="btn btn-primary" OnClick="btnRegister_Click" />
-        <a class="btn" href="Login.aspx">Back to Login</a>
+        <asp:Button ID="Button1" runat="server" Text="Back to login" CssClass="btn btn-primary" OnClick="Button1_Click"  />
     </div>
 </form>
 </body>
